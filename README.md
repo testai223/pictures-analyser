@@ -13,6 +13,7 @@ Simple Python utility to run a YOLO model over every image in a folder, save ann
 ```
 python -m src.analyze_folder --input assets/raw_images --output runs/demo --model yolov8n.pt --conf 0.25 --imgsz 640
 ```
+- Shortcut wrapper (uses the same defaults): `scripts/run_folder.sh [input_dir] [output_dir] [model_path]`
 - `--input`: folder containing images (`.jpg`, `.png`, `.bmp`, `.gif`, `.tif`).
 - `--output`: target folder; creates `annotated/` with labeled images and `summary.csv` with bounding boxes.
 - `--model`: YOLO model path or alias (any Ultralytics-compatible checkpoint).
